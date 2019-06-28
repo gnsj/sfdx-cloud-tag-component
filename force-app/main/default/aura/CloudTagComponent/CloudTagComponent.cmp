@@ -1,3 +1,8 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
-    <h1>Cloud Tag Component from VS-Code</h1>
-</aura:component>	
+        <ltng:require scripts="{!join(',', 
+        $Resource.AnyChart + '/anychart-base.min.js', 
+        $Resource.AnyChart + '/anychart-tag-cloud.min.js')}"/>    
+
+    <h1>Cloud Tag Component from VS-Code V2</h1>
+    <div id="container"></div>
+</aura:component>
